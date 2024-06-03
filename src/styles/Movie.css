@@ -1,0 +1,52 @@
+.movie{
+    background-color: #0f1419; 
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    font-family: Arial, sans-serif;
+
+    border: 5px solid rgb(40,50,60);
+    border-radius: 50px;
+}
+
+.title{
+    padding: 0px 0px;
+    font-size: 40px;
+    color: rgb(0,100,255);
+}
+
+img {
+    width: 50%;
+    height: 100%;
+
+    border-radius: 25px;
+    margin-bottom: 50px;
+
+}
+
+.overview {
+    font-size: 30px;
+    color: rgb(230,240,250);
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.releasedate {
+    font-size: 20px;
+    color: rgb(140,150,160);
+}
+
+.genres {
+    font-size: 20px;
+    color: rgb(140,150,160);
+}
+
+.rating {
+    font-size: 20px;
+    color: rgb(140,150,160);
+}

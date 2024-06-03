@@ -1,0 +1,91 @@
+.filter {
+    background-color: rgb(15, 20, 25); 
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+}
+
+/* GO BACK BTN */
+.clearbtn_container {
+    margin-top: 0;
+    padding: 0px;
+    margin: 0px;
+}
+
+.clearbtn {
+    background-color: transparent; 
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.clearbtn:hover{
+    /* color: rgb(255, 255, 170); */
+    color: rgb(0, 100, 255);
+}
+
+/* FILTER BTNS */
+.btn_container{
+    margin: 75px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.deselectedbtn {
+    background-color: rgb(45, 60, 70);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 18px;
+    
+    margin: 10px;
+}
+
+.deselectedbtn:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.selectedbtn {
+    background-color:rgb(0, 100, 255);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 18px;
+
+    margin: 10px;
+}
+
+.selectedbtn:hover{
+    transform: scale(1.1, 1.1);
+}
+
+/* GET REC */
+.enter {
+    margin-top: 100px;
+}
+
+.enterbtn{
+    background-color: rgb(0,100, 255); 
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.enterbtn:hover{
+    transform: scale(1.1, 1.1);
+}

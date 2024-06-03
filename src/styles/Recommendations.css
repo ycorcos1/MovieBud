@@ -1,0 +1,54 @@
+.recommendations{
+    background-color: #0f1419; 
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.container_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goback {
+    background-color: transparent; 
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 18px;
+    
+    margin: 10px;
+}
+
+.goback:hover {
+    color: rgb(0,100,255);
+    transform: scale(1.1, 1.1);
+}
+
+.refresh {
+    background-color: transparent; 
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 18px;
+    
+    margin: 10px;
+}
+
+.refresh:hover{
+    color: rgb(0,100,255);
+    transform: scale(1.1, 1.1);
+}
+
+.movie_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,22 @@
+.loading {
+    background-color: #0f1419; 
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.finding {
+    font-size: 50px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.loadingerror {
+    font-size: 18px;
+    margin: 0px;
+    color: rgb(150,150,150);
+}
