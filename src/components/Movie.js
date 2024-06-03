@@ -35,7 +35,7 @@ function Movie({ movie }) {
         {console.log(movie)}
       </div>
       <div className="rating">
-        <p>{`Rating: ${movie.popularity}`}</p>
+        <p>{`Rating: ${movie.vote_average}`}</p>
       </div>
     </div>
   );
