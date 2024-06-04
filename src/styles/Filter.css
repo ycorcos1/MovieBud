@@ -8,6 +8,7 @@
     height: 100%;
     width: 100vw;
     font-family: Arial, sans-serif;
+    margin-bottom: 100px;
 }
 
 /* GO BACK BTN */
@@ -74,6 +75,7 @@
 /* GET REC */
 .enter {
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .enterbtn{
