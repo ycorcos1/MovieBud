@@ -15,7 +15,11 @@
 .clearbtn_container {
     margin-top: 0;
     padding: 0px;
-    margin: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .clearbtn {
@@ -28,8 +32,30 @@
     font-size: 18px;
 }
 
-.clearbtn:hover{
-    /* color: rgb(255, 255, 170); */
+.clearbtn:hover {
+    color: rgb(0, 100, 255);
+}
+
+.andOr_container {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.deselected_andOr {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.deselected_andOr:hover {
+    color: rgb(0, 100, 255);
+    cursor: pointer;
+}
+
+.selected_andOr{
+    background-color: transparent;
+    border: none;
     color: rgb(0, 100, 255);
 }
 
