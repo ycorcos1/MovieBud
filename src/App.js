@@ -13,6 +13,7 @@ const API_URL = `https://api.themoviedb.org/3/discover/movie?api_key=${process.e
 function App() {
   const [movie, setMovie] = useState();
   const [selectedGenres, setSelectedGenres] = useState([]);
+  const [andOr, setAndOr] = useState("|");
 
   const addGenre = (genre) => {
     if (selectedGenres.includes(genre)) {
@@ -27,11 +28,12 @@ function App() {
     let url = `${API_URL}&page=${page}`;
     if (selectedGenres.length > 0) {
       if (selectedGenres.length > 1) {
-        url += `with_genres=${selectedGenres.join("|")}`;
+        url += `with_genres=${selectedGenres.join(andOr)}`;
       } else {
         url += `with_genres=${selectedGenres[0]}`;
       }
     }
+    console.log(url);
     const res = await fetch(url);
     const data = await res.json();
     setMovie(data.results[Math.floor(Math.random() * 20)]);
@@ -48,6 +50,7 @@ function App() {
   const clearAll = () => {
     setMovie();
     setSelectedGenres([]);
+    setAndOr("|");
   };
 
   return (
@@ -61,6 +64,8 @@ function App() {
           clearGenres,
           clearMovie,
           clearAll,
+          andOr,
+          setAndOr,
         }}
       >
         <Header />

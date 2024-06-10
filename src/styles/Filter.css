@@ -36,34 +36,11 @@
     color: rgb(0, 100, 255);
 }
 
-.andOr_container {
-    margin-left: 200px;
-    display: flex;
-    flex-direction: row;
-}
-
-.deselected_andOr {
-    background-color: transparent;
-    border: none;
-    color: white;
-}
-
-.deselected_andOr:hover {
-    color: rgb(0, 100, 255);
-    cursor: pointer;
-}
-
-.selected_andOr{
-    background-color: transparent;
-    border: none;
-    color: rgb(0, 100, 255);
-}
-
 /* FILTER BTNS */
 .btn_container{
     margin: 75px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
 }
 
 .deselectedbtn {
@@ -74,7 +51,6 @@
     cursor: pointer;
     border-radius: 30px;
     font-size: 18px;
-    
     margin: 10px;
 }
 
@@ -90,7 +66,6 @@
     cursor: pointer;
     border-radius: 30px;
     font-size: 18px;
-
     margin: 10px;
 }
 
@@ -98,9 +73,33 @@
     transform: scale(1.1, 1.1);
 }
 
+/* AND OR */
+.andOr{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.deselectedAndOr{
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.selectedAndOr{
+    background-color: transparent;
+    color: rgb(0, 100, 255);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
 /* GET REC */
 .enter {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 

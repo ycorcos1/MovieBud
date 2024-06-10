@@ -4,7 +4,7 @@ import { AppContext } from "../App";
 import { Link } from "react-router-dom";
 
 function Filter() {
-  const { selectedGenres, addGenre, getMovie, clearGenres } =
+  const { selectedGenres, addGenre, getMovie, clearGenres, andOr, setAndOr } =
     useContext(AppContext);
 
   function checkSelectedGenre(genre) {
@@ -12,6 +12,14 @@ function Filter() {
       return "selectedbtn";
     } else {
       return "deselectedbtn";
+    }
+  }
+
+  function checkAndOr(current) {
+    if (andOr === current) {
+      return "selectedAndOr";
+    } else {
+      return "deselectedAndOr";
     }
   }
 
@@ -88,6 +96,14 @@ function Filter() {
         </button>
         <button className={checkSelectedGenre(37)} onClick={() => addGenre(37)}>
           Western
+        </button>
+      </div>
+      <div className="andOr">
+        <button className={checkAndOr("|")} onClick={() => setAndOr("|")}>
+          OR
+        </button>
+        <button className={checkAndOr(",")} onClick={() => setAndOr(",")}>
+          AND
         </button>
       </div>
       <div className="enter">
