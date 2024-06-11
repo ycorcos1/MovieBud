@@ -26,7 +26,7 @@ function Filter() {
   return (
     <div className="filter">
       <div className="clearbtn_container">
-        <button className="clearbtn" onClick={() => clearGenres()}>
+        <button className="clearbtn" onClick={clearGenres}>
           Clear Filters
         </button>
       </div>
@@ -108,12 +108,7 @@ function Filter() {
       </div>
       <div className="enter">
         <Link to="/recommendations">
-          <button
-            className="enterbtn"
-            onClick={() => {
-              getMovie();
-            }}
-          >
+          <button className="enterbtn" onClick={getMovie}>
             Get Recommended Movie
           </button>
         </Link>

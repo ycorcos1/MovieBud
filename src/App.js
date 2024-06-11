@@ -33,7 +33,6 @@ function App() {
         url += `with_genres=${selectedGenres[0]}`;
       }
     }
-    console.log(url);
     const res = await fetch(url);
     const data = await res.json();
     setMovie(data.results[Math.floor(Math.random() * 20)]);
