@@ -1,5 +1,19 @@
-# MovieBud
+MovieBud
 
-### This app is meant to help users find a movie to watch when they are stuck.
+MovieBud is a React-based application designed to assist users in discovering movies to watch when they're undecided. By interacting with The Movie Database (TMDB) API, users can filter movies by genres and receive detailed information about randomly selected films.
 
-#### This app was created using React and interacts with The Movie DB (TMDB) API. Users can select genres to filter out a movie if they choose, once they generate, a movie is displayed along with its poster, overview, release dates, genres, and ratings. Users can also go back to edit the filters or generate another movie using the same filters.
+## Live Demo
+
+Experience the application live at [moviebud.s3-website-us-east-1.amazonaws.com](http://moviebud.s3-website-us-east-1.amazonaws.com).
+
+## Features
+
+- **Genre Filtering**: Users can select specific genres to tailor movie suggestions to their preferences.
+- **Random Movie Generation**: Upon applying filters, the app displays a randomly selected movie that matches the chosen criteria.
+- **Detailed Movie Information**: For each suggested movie, the app provides:
+  - Poster image
+  - Overview
+  - Release date
+  - Genres
+  - Ratings
+- **Flexible Exploration**: Users can modify their filters or generate new movie suggestions based on the same filters.
